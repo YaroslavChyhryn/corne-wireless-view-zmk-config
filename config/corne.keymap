@@ -14,10 +14,10 @@
 
         BaseColemakDH {
             bindings = <
-&trans  &kp Q  &kp W  &kp F   &kp P   &kp B     &kp J   &kp L   &kp U      &kp Y       &kp SQT   &trans
-&trans  &kp A  &kp R  &kp S   &kp T   &kp G     &kp M   &kp N   &kp E      &kp I       &kp O     &trans
-&trans  &kp Z  &kp X  &kp C   &kp D   &kp V     &kp K   &kp H   &kp COMMA  &kp PERIOD  &kp FSLH  &trans
-                      &trans  &trans  &trans    &trans  &trans  &trans
+&kp ESCAPE  &kp Q  &kp W  &kp F         &kp P    &kp B        &kp J      &kp L          &kp U      &kp Y       &kp SQT   &kp LEFT_BRACKET
+&kp LCTRL   &kp A  &kp R  &kp S         &kp T    &kp G        &kp M      &kp N          &kp E      &kp I       &kp O     &kp RIGHT_BRACKET
+&kp LSHFT   &kp Z  &kp X  &kp C         &kp D    &kp V        &kp K      &kp H          &kp COMMA  &kp PERIOD  &kp FSLH  &kp DELETE
+                          &kp LEFT_GUI  &kp TAB  &kp SPACE    &kp ENTER  &kp BACKSPACE  &kp LALT
             >;
 
             label = "BaseCDH";
@@ -50,10 +50,10 @@
 
             display-name = "Nav";
             bindings = <
-&kp TAB     &kp N1        &kp N2        &kp N3        &kp N4        &kp N5          &kp N6    &kp N7    &kp N8    &kp N9     &kp N0  &kp BSPC
-&bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &kp LEFT  &kp DOWN  &kp UP    &kp RIGHT  &trans  &trans
-&kp LSHFT   &trans        &trans        &trans        &trans        &trans          &trans    &trans    &trans    &trans     &trans  &trans
-                                        &kp LGUI      &trans        &kp SPACE       &kp RET   &trans    &kp RALT
+&kp TAB     &kp N1        &kp N2        &kp N3        &kp N4        &kp N5          &kp N6   &kp N7          &kp N8          &kp N9        &kp N0           &kp BSPC
+&bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &trans   &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW  &trans
+&kp LSHFT   &trans        &trans        &trans        &trans        &trans          &trans   &trans          &trans          &trans        &trans           &trans
+                                        &kp LGUI      &trans        &kp SPACE       &kp RET  &trans          &kp RALT
             >;
         };
 
@@ -75,10 +75,10 @@
 
         Num {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans  &trans    &trans  &trans  &trans
+&kp TAB    &trans  &kp N7  &kp N8        &kp N9  &trans    &trans  &trans  &trans    &trans  &trans  &trans
+&kp LCTRL  &trans  &kp N4  &kp N5        &kp N6  &trans    &trans  &trans  &trans    &trans  &trans  &trans
+&kp LSHFT  &trans  &kp N1  &kp N2        &kp N3  &trans    &trans  &trans  &trans    &trans  &trans  &trans
+                           &kp LEFT_GUI  &kp N0  &trans    &trans  &trans  &kp LALT
             >;
 
             label = "Num";
@@ -86,10 +86,10 @@
 
         Media {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans  &trans    &trans  &trans  &trans
+&kp TAB    &trans  &trans  &trans        &trans  &trans    &trans  &trans  &trans    &trans  &trans  &trans
+&kp LCTRL  &trans  &trans  &trans        &trans  &trans    &trans  &trans  &trans    &trans  &trans  &trans
+&kp LSHFT  &trans  &trans  &trans        &trans  &trans    &trans  &trans  &trans    &trans  &trans  &trans
+                           &kp LEFT_GUI  &trans  &trans    &trans  &trans  &kp LALT
             >;
 
             label = "Media";
