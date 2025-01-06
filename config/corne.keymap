@@ -38,7 +38,7 @@
             // | SHFT |  Z  |  X  |  C  |  V  |  B  |   |  N  |  M   |  ,  |  .  |  /  | ESC  |
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
-            display-name = "Base";
+            display-name = "ColemakDH";
             bindings = <
 &kp TAB           &kp Q           &kp W           &kp F               &kp P             &kp B        &kp J        &kp L              &kp U                &kp Y            &kp SQT          &kp LBKT
 &kp LEFT_SHIFT    &mt LEFT_GUI A  &mt LEFT_ALT R  &mt LEFT_CONTROL S  &mt LEFT_SHIFT T  &kp G        &kp M        &mt RIGHT_SHIFT N  &mt RIGHT_CONTROL E  &mt RIGHT_ALT I  &mt RIGHT_GUI O  &kp SEMI
@@ -54,6 +54,8 @@
 &kp LCTRL  &kp Z           &kp X           &kp C               &kp V             &kp B        &kp N        &kp M              &kp COMMA            &kp DOT          &kp FSLH                 &kp RBKT
                                            &kp LEFT_GUI        &lt 2 SPACE       &lt 4 TAB    &lt 5 ENTER  &lt 3 BACKSPACE    &kp RIGHT_ALT
             >;
+
+            label = "UA";
         };
 
         NAV {
@@ -63,10 +65,10 @@
             // | SHFT |     |     |     |     |     |   |     |     |     |     |     |      |
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
-            display-name = "nav";
+            display-name = "Nav";
             bindings = <
 &kp ESCAPE  &kp C_MUTE     &kp C_PREVIOUS  &kp C_PLAY_PAUSE  &kp C_NEXT      &kp C_VOLUME_UP      &kp PAGE_UP    &kp LS(LC(TAB))       &kp UP_ARROW  &kp LC(TAB)            &kp HOME  &kp DELETE
-&trans      &kp LEFT_GUI   &kp LEFT_ALT    &kp LEFT_CONTROL  &kp LEFT_SHIFT  &kp C_VOLUME_DOWN    &kp PAGE_DOWN  &kp DOWN              &kp UP        &kp RIGHT              &kp END   &kp LG(LS(NUMBER_8))
+&trans      &kp LEFT_GUI   &kp LEFT_ALT    &kp LEFT_CONTROL  &kp LEFT_SHIFT  &kp C_VOLUME_DOWN    &kp PAGE_DOWN  &kp LEFT_ARROW        &kp UP        &kp RIGHT              &kp END   &kp LG(LS(NUMBER_8))
 &trans      &kp LG(LS(Z))  &kp LG(Z)       &kp LG(X)         &kp LG(C)       &kp LG(V)            &none          &kp LG(LEFT_BRACKET)  &none         &kp LG(RIGHT_BRACKET)  &none     &none
                                            &trans            &trans          &trans               &trans         &trans                &trans
             >;
@@ -79,7 +81,7 @@
             // | SHFT |     |     |     |     |     |   |  _  |  +  |  {  |  }  | "|" |  ~   |
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
-            display-name = "sym";
+            display-name = "Sym";
             bindings = <
 &trans  &kp SLASH        &kp BACKSLASH  &kp ASTERISK      &kp UNDERSCORE  &kp PRCNT        &kp AT_SIGN  &kp COLON      &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp SINGLE_QUOTE   &none
 &trans  &kp PIPE         &kp MINUS      &kp PLUS          &kp EQUAL       &kp CARET        &kp HASH     &kp SEMICOLON  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp DOUBLE_QUOTES  &none
@@ -95,6 +97,8 @@
 &trans  &kp LA(LC(J))  &kp LA(LC(LEFT_ARROW))  &kp LC(LG(F))  &kp LA(LC(RIGHT_ARROW))  &kp LA(LC(K))    &kp N0  &kp N1  &kp N2  &kp N3  &none  &none
                                                &trans         &trans                   &trans           &trans  &trans  &trans
             >;
+
+            label = "Num";
         };
 
         SYS {
@@ -104,6 +108,8 @@
 &trans  &kp F10  &kp F1  &kp F2  &kp F3  &none     &bt BT_SEL 0       &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &bt BT_CLR_ALL
                          &trans  &trans  &trans    &trans             &trans        &trans
             >;
+
+            label = "Fn";
         };
 
         extra_1 { status = "reserved"; };
